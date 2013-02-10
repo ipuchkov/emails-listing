@@ -1,17 +1,17 @@
 <h1>Listing emails</h1>
 <table>
-	<tr>
-		<th>Sender</th>
-		<th>Subject</th>
-	</tr>
-<% @emails.each do |email| %>
-	<tr>
-		<td><%= email.sender %></td>
-		<td><%= email.subject %></td>
-	</tr>
-<% end %>
+  <tr>
+    <th>Sender</th>
+	<th>Subject</th>
+  </tr>
+  <% @emails.each do |email| %>
+    <tr>
+  	  <td><%= email.sender %></td>
+	  <td><%= email.subject %></td>
+    </tr>
+  <% end %>
 </table>
 
 <% if @emails.empty? %>
-	<em>No emails</em>
+  <em>No emails</em>
 <% end %>
