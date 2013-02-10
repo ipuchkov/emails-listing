@@ -1,13 +1,13 @@
 class EmailsController < ApplicationController 
   def index
-    @emails = Emails.all
+    @emails = Email.all
   end
 
   def show
-    @email = Emails.find(params[:id])
+    @email = Email.find(params[:id])
   end
 
   def create
-    @email = Emails.create(params[:emails])
+    @email = Email.create(params[:email])
   end  
 end
