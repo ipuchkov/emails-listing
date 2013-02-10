@@ -1,3 +1,4 @@
+<%= button_to 'Check emails', fetch_emails_path, :remote => true %>
 <h1>Listing emails</h1>
 <table>
   <tr>
@@ -7,7 +8,7 @@
   <% @emails.each do |email| %>
     <tr>
   	  <td><%= email.sender %></td>
-	  <td><%= email.subject %></td>
+	  <td><%= link_to email.subject, email_path(email.id) %></td>
     </tr>
   <% end %>
 </table>
