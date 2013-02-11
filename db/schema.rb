@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130210114026) do
+ActiveRecord::Schema.define(:version => 20130211191911) do
 
   create_table "emails", :force => true do |t|
     t.string   "subject"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(:version => 20130210114026) do
     t.text     "content"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "file_path"
+    t.string   "file_name"
   end
 
 end

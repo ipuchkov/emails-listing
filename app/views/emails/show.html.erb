@@ -1,3 +1,4 @@
 <h1><%= @email.subject %></h1>
 <p> From <%= @email.sender %></p>
 <p><%= @email.content %></p>
+<p>Attachment: <%= link_to @email.file_name,  @email.file_path %></p>
