@@ -23,6 +23,11 @@ end
 
 gem 'jquery-rails'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara', '~> 1.1.4'
+  gem 'launchy'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
