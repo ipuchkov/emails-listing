@@ -1,3 +1,4 @@
 class Attachment < ActiveRecord::Base
-  attr_accessible :email_id, :name, :path
+  belongs_to :email
+  attr_accessible :name, :path, :email
 end
